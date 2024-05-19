@@ -1,10 +1,12 @@
 import Image from "next/image";
 import React from "react";
 import UserIcon from "@/components/UserIcon";
+import PagePadding from "@/components/PagePadding";
 
 const Header = ({ children }) => {
   return (
     <header className=" relative overflow-y-auto w-full h-full">
+      {/* bgSection */}
       <section className=" absolute top-0 w-full">
         <div className=" relative h-[400px] w-full">
           <Image
@@ -17,7 +19,10 @@ const Header = ({ children }) => {
           <div className=" absolute h-[400]px top-0 bg-gradient-to-t from-black w-full h-full"></div>
         </div>
       </section>
-      <section>
+
+      {/* searchSection */}
+      <section className=" sticky">
+        <PagePadding>searchSection</PagePadding>
         <UserIcon />
       </section>
       <section className=" absolute">{children}</section>
