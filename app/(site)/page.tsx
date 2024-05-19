@@ -11,7 +11,7 @@ const page = async () => {
 
   // console.log("after Homepage sleep ...");
 
-  return <div>Home Page</div>;
+  return <div className="min-h-[600px]">Home Page</div>;
 };
 
 export default page;
