@@ -106,7 +106,7 @@ const Header = ({ children }) => {
           </div>
         </PagePadding>
       </section>
-      <section className=" absolute">{children}</section>
+      <section className=" relative">{children}</section>
     </header>
   );
 };
